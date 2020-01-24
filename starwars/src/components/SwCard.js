@@ -4,17 +4,17 @@ import styled from "styled-components";
 const SwCardDiv = styled.div`
   background-color: #c2b280;
   width: 35%;
-  padding: 2%;
+  padding: 3%;
   border: 1.5px black solid;
   border-radius: 5px;
   opacity: 0.8;
-  margin 3% auto;
+  margin 1.5% auto;
   display:flex;
   flex-direction:column;
 `;
 
 function SwCard(props) {
-  console.log(`Card props: ${props}`);
+  //   console.log(`Card props: ${props}`);
   return (
     <SwCardDiv>
       <h2>{props.character.name}</h2>
