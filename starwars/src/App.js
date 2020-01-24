@@ -35,10 +35,10 @@ const App = () => {
     } else {
       setApi(swData.previous);
       console.log(api);
-      axios.get(api).then(response => {
-        console.log(response);
-        setSwData(response.data);
-      });
+      // axios.get(api).then(response => {
+      //   console.log(response);
+      //   setSwData(response.data);
+      // });
     }
   };
 
@@ -48,10 +48,10 @@ const App = () => {
     } else {
       setApi(swData.next);
       console.log(api);
-      axios.get(api).then(response => {
-        console.log(response);
-        setSwData(response.data);
-      });
+      // axios.get(api).then(response => {
+      //   console.log(response);
+      //   setSwData(response.data);
+      // });
     }
   };
 
@@ -65,7 +65,7 @@ const App = () => {
       .catch(error => {
         console.log(`An error has occured: ${error}`);
       });
-  }, []);
+  }, [api]);
 
   return (
     <div className="App">
