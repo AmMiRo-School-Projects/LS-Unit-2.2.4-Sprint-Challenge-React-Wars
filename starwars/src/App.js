@@ -3,7 +3,6 @@ import axios from "axios";
 import "./App.css";
 import SwCardSection from "./components/SwCardSection";
 import styled from "styled-components";
-import ReactDOM, { render } from "react-dom";
 
 const AppH1 = styled.h1`
   font-size: 3rem;
@@ -35,10 +34,6 @@ const App = () => {
     } else {
       setApi(swData.previous);
       console.log(api);
-      // axios.get(api).then(response => {
-      //   console.log(response);
-      //   setSwData(response.data);
-      // });
     }
   };
 
@@ -48,10 +43,6 @@ const App = () => {
     } else {
       setApi(swData.next);
       console.log(api);
-      // axios.get(api).then(response => {
-      //   console.log(response);
-      //   setSwData(response.data);
-      // });
     }
   };
 
@@ -59,7 +50,7 @@ const App = () => {
     axios
       .get(api)
       .then(response => {
-        // console.log(response);
+        console.log(response);
         setSwData(response.data);
       })
       .catch(error => {
