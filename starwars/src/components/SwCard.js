@@ -14,7 +14,7 @@ const SwCardDiv = styled.div`
 `;
 
 function SwCard(props) {
-  //   console.log(`Card props: ${props}`);
+  console.log(`Card props: ${props}`);
   return (
     <SwCardDiv>
       <h2>{props.character.name}</h2>
